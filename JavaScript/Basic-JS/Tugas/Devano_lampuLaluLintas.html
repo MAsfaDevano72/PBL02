@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lampu Lalu Lintas</title>
 </head>
 <body>
     <script>
@@ -12,12 +12,12 @@
         let merah = "Kendaraan berhenti";
 
         let lampu = prompt("LAMPU LALU LINTAS \nlampu mana yang akan anda pilih? \nHijau, Kuning atau Merah")
-        if ( lampu === "merah") 
-            document.write(merah);
-        else if ( lampu === "kuning") 
-            document.write("Anda sedang melihat lampu" + kuning + ", Mohon berhati-hati")
+        if ( lampu === "merah" || lampu === "Merah") 
+            document.write("Anda sedang melihat lampu merah, Mohon berhenti ");
+        else if ( lampu === "kuning" || lampu === "Kuning") 
+            document.write("Anda sedang melihat lampu kuning, Mohon berhati-hati")
         else 
-            document.write(hijau);
+            document.write("Silahkan melanjutkan perjalanan anda");
 
         
     </script>
