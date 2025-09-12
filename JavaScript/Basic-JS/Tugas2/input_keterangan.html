@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tugas 2 - Keterangan Pernikahan</title>
 </head>
 <body>
     <script>
@@ -22,9 +22,11 @@
             keterangan = "Duda";
         else if (kelamin === "perempuan" && status === "cerai")
             keterangan = "Janda";
+        else 
+            keterangan = "-"
 
 
-        document.write("<h2>Nama saya " + nama + " ,saya seorang " + kelamin +" ,status saya " + keterangan +"</h2>")
+        document.write("<h2>Nama: " + nama + "<br>Jenis kelamin: " + kelamin +"<br>Status: " + keterangan +"</h2>")
     </script>
 </body>
 </html>
