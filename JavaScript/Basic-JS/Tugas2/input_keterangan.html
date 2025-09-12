@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nama = prompt("Masukan nama : ");
+        const kelamin = prompt("Masukan jenis kelamin anda (Laki-laki/Perempuan)").toLowerCase();
+        const status = prompt("Masukan status anda (Lajang/Menikah/Cerai)").toLowerCase();
+        let keterangan;
+
+        if (kelamin === "laki-laki" && status === "lajang")
+            keterangan = "Perjaka";
+        else if (kelamin === "perempuan" && status === "lajang")
+            keterangan = "Perawan";
+        else if (kelamin === "laki-laki" && status === "menikah"  || kelamin === "perempuan" && status === "menikah")
+            keterangan = "Menikah";
+        else if (kelamin === "laki-laki" && status === "cerai")
+            keterangan = "Duda";
+        else if (kelamin === "perempuan" && status === "cerai")
+            keterangan = "Janda";
+
+
+        document.write("<h2>Nama saya " + nama + " ,saya seorang " + kelamin +" ,status saya " + keterangan +"</h2>")
+    </script>
+</body>
+</html>
